@@ -15,32 +15,11 @@ namespace HomeWork
 {
     internal class Program
     {
-        private static void Fibonaccy() 
-        {
-            for (; ; ) { } // пример. Цикл может быть любой, если в задаче не указано, какой использовать
-            // для вывода используйте Console.WriteLine
-
-        }
-
-        private static void Even() 
-        {
-            for (; ; ) { } // аналогично
-        }
-
-        private static void Table() { }
-
-        private static void Password() 
-        {
-            string password = "qwerty"; // пароль задаётся в начале
-            //в цикле проверяется ввод и выводится результат
-        }
-
         static void Main(string[] args)
         {
-            Fibonaccy();
-            Even();
-            Table();
-            Password();
+            // Fibonaccy
+            for (; ; ) { } // пример. Цикл может быть любой, если в задаче не указано, какой использовать
+            // для вывода используйте Console.WriteLine
         }
     }
 }
