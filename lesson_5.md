@@ -91,6 +91,17 @@ public bool SetDamage(float damage)
 4.1 Свойство только для чтения;  
 4.2 Значение задаётся в конструкторе и равно 1; тип float
 
+Фрагмент кода:
+
+```
+public class Weapon
+{
+    public string Name { get; }
+    public int MinDamage { get; private set; }
+    // Далее по заданию
+}
+```
+
 Открытые методы:  
 1. Конструкторы:  
 1.1 Со строковым аргументом - устанавливает значение строки в свойство Name;  
@@ -106,3 +117,22 @@ public bool SetDamage(float damage)
 3. Вернуть урон (GetDamage):  
 3.1 Не принимает никаких аргументов;  
 3.2 Возвращает число типа int, рассчитываемое, как среднее арифметическое между MinDamage и MaxDamage (вспомните, что такое среднее арифметическое из школьного курса математики);  
+
+Фрагмент кода:
+```
+public Weapon(string name)
+{
+    Name = name;
+}
+
+public Weapon(string name, int minDamage, int maxDamage) : this(name)
+{
+    SetDamageParams(minDamage, maxDamage);
+}
+
+public void SetDamageParams(int minDamage, int maxDamage)
+{
+    MinDamage = minDamage;
+    // Закончить!
+}
+```
